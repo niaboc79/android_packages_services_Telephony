@@ -25,7 +25,7 @@
     <!-- Text for CallFailCause.CHANNEL_UNACCEPTABLE = 6 -->
     <string name="callFailed_channel_unacceptable">Kanal kabul edilemez</string>
     <!-- Text for CallFailCause.OPERATOR_DETERMINED_BARRING = 8 -->
-    <string name="callFailed_operator_determined_barring">Operatör engelleme belirlendi</string>
+    <string name="callFailed_operator_determined_barring">Operatör kısıtlama belirlendi</string>
     <!-- Text for CallFailCause.NORMAL_CLEARING = 16 -->
     <string name="callFailed_normal">Normal arama temizleme</string>
     <!-- Text for CallFailCause.CALL_FAIL_NO_USER_RESPONDING = 18 -->
@@ -41,9 +41,9 @@
     <!-- Text for CallFailCause.CALL_FAIL_DESTINATION_OUT_OF_ORDER = 27 -->
     <string name="callFailed_destination_out_of_order">Hedef sıra dışı</string>
     <!-- Text for CallFailCause.INVALID_NUMBER = 28 -->
-    <string name="callFailed_invalid_number_format">Geçersiz sayı biçimi (eksik sayı)</string>
+    <string name="callFailed_invalid_number_format">Geçersiz numara biçimi (tam sayı)</string>
     <!-- Text for CallFailCause.FACILITY_REJECTED = 29 -->
-    <string name="callFailed_facility_rejected">Tesis reddedildi</string>
+    <string name="callFailed_facility_rejected">Tesis reddetti</string>
     <!-- Text for CallFailCause.STATUS_ENQUIRY = 30 -->
     <string name="callFailed_resp_to_status_enquiry">DURUM SORGUSU bildir</string>
     <!-- Text for CallFailCause.NORMAL_UNSPECIFIED = 31 -->
@@ -61,7 +61,7 @@
     <!-- Text for CallFailCause.QOS_NOT_AVAIL = 49 -->
     <string name="callFailed_QOS_unavailable">Servis kalitesi kullanılamıyor</string>
     <!-- Text for CallFailCause.REQUESTED_FACILITY_NOT_SUBSCRIBED = 50 -->
-    <string name="callFailed_requested_facility_not_subscribed">Talep edilen tesis abone değil</string>
+    <string name="callFailed_requested_facility_not_subscribed">İstenen tesise abone olunmadı</string>
     <!-- Text for CallFailCause.INCOMING_CALLS_BARRED_WITHIN_CUG = 55 -->
     <string name="callFailed_incoming_calls_barred_within_CUG">Gelen aramalar CUG ile yasaklanmış</string>
     <!-- Text for CallFailCause.BEARER_CAPABILITY_NOT_AUTHORIZED = 57 -->
@@ -93,29 +93,29 @@
     <!-- Text for CallFailCause.MESSAGE_TYPE_NON_IMPLEMENTED = 97 -->
     <string name="callFailed_message_type_non_implemented">İleti türü yok veya uygulanmadı</string>
     <!-- Text for CallFailCause.MESSAGE_TYPE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE = 98 -->
-    <string name="callFailed_message_type_not_compatible_with_protocol_state">İleti türü protokol durumuyla uyumlu değil</string>
+    <string name="callFailed_message_type_not_compatible_with_protocol_state">İleti türü iletişim kuralı durumu ile uyumlu değil</string>
     <!-- Text for CallFailCause.INFORMATION_ELEMENT_NON_EXISTENT = 99 -->
     <string name="callFailed_information_element_non_existent">Bilgi öğesi bulunamıyor veya uygulanamadı</string>
     <!-- Text for CallFailCause.CONDITIONAL_IE_ERROR = 100 -->
     <string name="callFailed_conditional_IE_error">Şartlı IE hatası</string>
     <!-- Text for CallFailCause.MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE = 101 -->
-    <string name="callFailed_message_not_compatible_with_protocol_state">İleti protokol durumuyla uyumlu değil</string>
+    <string name="callFailed_message_not_compatible_with_protocol_state">İleti türü iletişim kuralı durumu ile uyumlu değil</string>
     <!-- Text for CallFailCause.RECOVERY_ON_TIMER_EXPIRED = 102 -->
     <string name="callFailed_recovery_on_timer_expired">Süre dolduğunda kurtar</string>
     <!-- Text for CallFailCause.PROTOCOL_ERROR_UNSPECIFIED = 111 -->
     <string name="callFailed_protocol_error_unspecified">Belirsiz bir iletişim kuralı hatası</string>
     <!-- Text for CallFailCause.INTERWORKING_UNSPECIFIED = 127 -->
-    <string name="callFailed_interworking_unspecified">Birlikte çalışılamıyor</string>
+    <string name="callFailed_interworking_unspecified">Interworking, belirtilmemiş</string>
     <!-- Text for CallFailCause.NON_SELECTED_USER_CLEARING = 26 -->
     <string name="callFailed_non_selected_user_clearing">Seçilmemiş kullanıcı temizleniyor</string>
     <!-- In-call screen: call failure reason (call modified to call with modified data) -->
-    <string name="callFailed_dialToDialVideo">Arama isteği Video arama isteği olarak değiştirildi.</string>
+    <string name="callFailed_dialToDialVideo">Arama isteği Görüntülü arama isteği olarak değiştirildi.</string>
     <!-- In-call screen: call failure reason (call modified to call with modified data) -->
-    <string name="callFailed_dialVideoToSs">Video arama isteği SS isteği ile değiştirildi.</string>
+    <string name="callFailed_dialVideoToSs">Görüntülü arama isteği SS isteği ile değiştirildi.</string>
     <!-- In-call screen: call failure reason (call modified to call with modified data) -->
-    <string name="callFailed_dialVideoToUssd">Video arama isteği USSD isteği ile değiştirildi.</string>
+    <string name="callFailed_dialVideoToUssd">Görüntülü arama isteği USSD isteği ile değiştirildi.</string>
     <!-- In-call screen: call failure reason (call modified to call with modified data) -->
-    <string name="callFailed_dialVideoToDial">Video arama isteği Arama isteği ile değiştirildi.</string>
+    <string name="callFailed_dialVideoToDial">Görüntülü ARAMA isteği ARAMA isteğine dönüştürüldü.</string>
     <!-- In-call screen: call failure reason (call modified to call with modified data) -->
-    <string name="callFailed_dialVideoToDialVideo">Video arama isteği farklı numaralı Video arama isteği olarak değiştirildi.</string>
+    <string name="callFailed_dialVideoToDialVideo">Görüntülü ARAMA isteği başka bir numarayla Görüntülü ARAMA isteğine dönüştürüldü.</string>
 </resources>

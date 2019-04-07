@@ -17,9 +17,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Supplementary for Clear Code -->
     <!-- Text for CallFailCause.NO_CIRCUIT_AVAIL = 34 -->
-    <string name="callFailed_no_circuit_avail">No circuit availiable</string>
+    <string name="callFailed_no_circuit_avail">Netwerk niet beschikbaar</string>
     <!-- Text for CallFailCause.NETWORK_OUT_OF_ORDER = 38 -->
-    <string name="callFailed_network_out_of_order">Network out of order</string>
+    <string name="callFailed_network_out_of_order">Netwerk buiten dienst</string>
     <!-- Text for CallFailCause.NO_ROUTE_TO_DESTINAON = 3 -->
     <string name="callFailed_no_route_to_destination">No route to destination</string>
     <!-- Text for CallFailCause.CHANNEL_UNACCEPTABLE = 6 -->
@@ -33,15 +33,15 @@
     <!-- Text for CallFailCause.CALL_FAIL_NO_ANSWER_FROM_USER = 19 -->
     <string name="callFailed_no_answer_from_user">User alerting, no answer</string>
     <!-- Text for CallFailCause.CALL_REJECTED = 21 -->
-    <string name="callFailed_call_rejected">Call rejected</string>
+    <string name="callFailed_call_rejected">Oproep geweigerd</string>
     <!-- Text for CallFailCause.NUMBER_CHANGED = 22 -->
-    <string name="callFailed_number_changed">Number changed</string>
+    <string name="callFailed_number_changed">Nummer gewijzigd</string>
     <!-- Text for CallFailCause.PREEMPTION = 25 -->
     <string name="callFailed_preemption">Pre-emption</string>
     <!-- Text for CallFailCause.CALL_FAIL_DESTINATION_OUT_OF_ORDER = 27 -->
-    <string name="callFailed_destination_out_of_order">Destination out of order</string>
+    <string name="callFailed_destination_out_of_order">Bestemming buiten werking</string>
     <!-- Text for CallFailCause.INVALID_NUMBER = 28 -->
-    <string name="callFailed_invalid_number_format">Invalid number format (incomplete number)</string>
+    <string name="callFailed_invalid_number_format">Ongeldig nummerformaat (onvolledig nummer)</string>
     <!-- Text for CallFailCause.FACILITY_REJECTED = 29 -->
     <string name="callFailed_facility_rejected">Facility rejected</string>
     <!-- Text for CallFailCause.STATUS_ENQUIRY = 30 -->
@@ -49,7 +49,7 @@
     <!-- Text for CallFailCause.NORMAL_UNSPECIFIED = 31 -->
     <string name="callFailed_normal_unspecified">Normal, unspecified</string>
     <!-- Text for CallFailCause.TEMPORARY_FAILURE = 41 -->
-    <string name="callFailed_tempopary_failure">Temporary failure</string>
+    <string name="callFailed_tempopary_failure">Tijdelijke storing</string>
     <!-- Text for CallFailCause.SWITCHING_CONGESTION = 42 -->
     <string name="callFailed_switching_equipment_congestion">Switching equipment congestion</string>
     <!-- Text for CallFailCause.ACCESS_INFORMATION_DISCARDED = 43 -->

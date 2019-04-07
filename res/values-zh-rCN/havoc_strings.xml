@@ -21,11 +21,11 @@
     <!-- Text for CallFailCause.NETWORK_OUT_OF_ORDER = 38 -->
     <string name="callFailed_network_out_of_order">网络错误</string>
     <!-- Text for CallFailCause.NO_ROUTE_TO_DESTINAON = 3 -->
-    <string name="callFailed_no_route_to_destination">无线路</string>
+    <string name="callFailed_no_route_to_destination">没有可抵达目的地的路线</string>
     <!-- Text for CallFailCause.CHANNEL_UNACCEPTABLE = 6 -->
     <string name="callFailed_channel_unacceptable">频道错误</string>
     <!-- Text for CallFailCause.OPERATOR_DETERMINED_BARRING = 8 -->
-    <string name="callFailed_operator_determined_barring">运营商被停用</string>
+    <string name="callFailed_operator_determined_barring">运营商被禁用</string>
     <!-- Text for CallFailCause.NORMAL_CLEARING = 16 -->
     <string name="callFailed_normal">清除正常呼叫</string>
     <!-- Text for CallFailCause.CALL_FAIL_NO_USER_RESPONDING = 18 -->
@@ -41,7 +41,7 @@
     <!-- Text for CallFailCause.CALL_FAIL_DESTINATION_OUT_OF_ORDER = 27 -->
     <string name="callFailed_destination_out_of_order">目标错误</string>
     <!-- Text for CallFailCause.INVALID_NUMBER = 28 -->
-    <string name="callFailed_invalid_number_format">无效的号码格式（号码不完整）</string>
+    <string name="callFailed_invalid_number_format">无效的号码格式 (号码不完整)</string>
     <!-- Text for CallFailCause.FACILITY_REJECTED = 29 -->
     <string name="callFailed_facility_rejected">设备被拒绝</string>
     <!-- Text for CallFailCause.STATUS_ENQUIRY = 30 -->
@@ -69,7 +69,7 @@
     <!-- Text for CallFailCause.BEARER_NOT_AVAIL = 58 -->
     <string name="callFailed_bearer_capability_unavailable">传输容量目前不可用</string>
     <!-- Text for CallFailCause.SERVICE_OPTION_NOT_AVAILABLE = 63 -->
-    <string name="callFailed_service_option_not_available">服务或选项不可用或未指定</string>
+    <string name="callFailed_service_option_not_available">服务或选项不可用</string>
     <!-- Text for CallFailCause.BEARER_SERVICE_NOT_IMPLEMENTED = 65 -->
     <string name="callFailed_bearer_service_not_implemented">传输服务未执行</string>
     <!-- Text for CallFailCause.REQUESTED_FACILITY_NOT_IMPLEMENTED = 69 -->
@@ -93,7 +93,7 @@
     <!-- Text for CallFailCause.MESSAGE_TYPE_NON_IMPLEMENTED = 97 -->
     <string name="callFailed_message_type_non_implemented">信息类型不存在或无法使用</string>
     <!-- Text for CallFailCause.MESSAGE_TYPE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE = 98 -->
-    <string name="callFailed_message_type_not_compatible_with_protocol_state">信息类型与协议不兼容</string>
+    <string name="callFailed_message_type_not_compatible_with_protocol_state">信息与协议状态不兼容</string>
     <!-- Text for CallFailCause.INFORMATION_ELEMENT_NON_EXISTENT = 99 -->
     <string name="callFailed_information_element_non_existent">信息元素不存在或未实现</string>
     <!-- Text for CallFailCause.CONDITIONAL_IE_ERROR = 100 -->
@@ -117,5 +117,5 @@
     <!-- In-call screen: call failure reason (call modified to call with modified data) -->
     <string name="callFailed_dialVideoToDial">视频拔号请求已修改为普通拔号请求。</string>
     <!-- In-call screen: call failure reason (call modified to call with modified data) -->
-    <string name="callFailed_dialVideoToDialVideo">视频通话请求已修改为不同号码的视频通话。</string>
+    <string name="callFailed_dialVideoToDialVideo">视频通话请求已修改为不同号码的视频通话</string>
 </resources>
