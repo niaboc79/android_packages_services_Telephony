@@ -235,7 +235,6 @@ public class PhoneInterfaceManager extends ITelephony.Stub {
     private static final int CMD_HANDLE_USSD_REQUEST = 47;
     private static final int CMD_GET_FORBIDDEN_PLMNS = 48;
     private static final int EVENT_GET_FORBIDDEN_PLMNS_DONE = 49;
-    private static final int CMD_TOGGLE_2G = 998;
     private static final int CMD_SWITCH_SLOTS = 50;
     private static final int EVENT_SWITCH_SLOTS_DONE = 51;
     private static final int CMD_GET_NETWORK_SELECTION_MODE = 52;
@@ -260,6 +259,8 @@ public class PhoneInterfaceManager extends ITelephony.Stub {
     private static final int EVENT_GET_MODEM_STATUS_DONE = 71;
     private static final int CMD_ERASE_MODEM_CONFIG = 72;
     private static final int EVENT_ERASE_MODEM_CONFIG_DONE = 73;
+    private static final int CMD_TOGGLE_2G = 998;
+    private static final int CMD_TOGGLE_3G = 999;
 
     // Parameters of select command.
     private static final int SELECT_COMMAND = 0xA4;
@@ -1260,6 +1261,38 @@ public class PhoneInterfaceManager extends ITelephony.Stub {
 
         aphone.setPreferredNetworkType(network,
                 mMainThreadHandler.obtainMessage(CMD_TOGGLE_2G));
+        if(phoneSubId != 0) {
+            android.provider.Settings.Global.putInt(mApp.getContentResolver(),
+                android.provider.Settings.Global.PREFERRED_NETWORK_MODE + phoneSubId, network);
+        } else {
+            android.provider.Settings.Global.putInt(mApp.getContentResolver(),
+                android.provider.Settings.Global.PREFERRED_NETWORK_MODE, network);
+        }
+
+        log("DefaultSubId: " + phoneSubId);
+        log("NetworkType: " + network);
+    }
+
+    public void toggle3G(boolean on) {
+        int network = -1;
+        final int phoneSubId = mSubscriptionController.getDefaultDataSubId();
+        Phone aphone = getPhone(phoneSubId);
+
+        if (on) {
+            if(phoneSubId != 0) {
+                pNetwork = android.provider.Settings.Global.getInt(mApp.getContentResolver(),
+                    android.provider.Settings.Global.PREFERRED_NETWORK_MODE + phoneSubId, 0);
+            } else {
+                pNetwork = android.provider.Settings.Global.getInt(mApp.getContentResolver(),
+                    android.provider.Settings.Global.PREFERRED_NETWORK_MODE, 0);
+            }
+            network = TelephonyManager.NETWORK_MODE_GSM_UMTS;
+        } else {
+            network = pNetwork;
+        }
+
+        aphone.setPreferredNetworkType(network,
+                mMainThreadHandler.obtainMessage(CMD_TOGGLE_3G));
         if(phoneSubId != 0) {
             android.provider.Settings.Global.putInt(mApp.getContentResolver(),
                 android.provider.Settings.Global.PREFERRED_NETWORK_MODE + phoneSubId, network);
